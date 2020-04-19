@@ -16,12 +16,14 @@
 
 <style lang="scss" scoped>
     button{
-        background: seagreen;
+        background: rgb(231, 129, 33);;
         height: 3rem;
         border:none;
-        border-radius: 4px;
-        width: 30%;  
+        border-radius: 4px;         
         color:white;  
         font-size:1.3rem;
+        width: 80%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 </style>

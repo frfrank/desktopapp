@@ -1,7 +1,7 @@
 <template>
   <div class="MenuComponent">
     <ul class="menu">
-      <li><a href=""> Inicio</a></li>
+      <li @click="push(name, 'login')"><a href=""> Inicio</a></li>
       <li><a href=""> Ingresos</a></li>
       <li><a href=""> Egresos</a></li>
       <li><a href=""> Clientes</a></li>
@@ -15,7 +15,7 @@ export default {};
 
 <style lang="scss" scoped>
 .MenuComponent {
-  background: rgb(32, 29, 29);
+  background: rgb(94, 92, 91);
 }
 .menu {
   display: flex;
