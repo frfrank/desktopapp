@@ -1,6 +1,7 @@
 <template>
   <div id="app">    
     <MenuComponent></MenuComponent>
+    <router-view></router-view>
   </div>
 </template>
 
