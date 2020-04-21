@@ -25,7 +25,7 @@ export default {};
 <style lang="scss" scoped>
 
 .MenuComponent {
-  background: #0B2239;
+  background: #55AA81;
 }
 .menu {
   display: flex;
