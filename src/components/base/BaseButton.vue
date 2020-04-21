@@ -16,7 +16,7 @@
 
 <style lang="scss" scoped>
     button{
-        background: rgb(231, 129, 33);;
+        background: #0B2239;
         height: 3rem;
         border:none;
         border-radius: 4px;         

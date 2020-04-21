@@ -1,14 +1,15 @@
 <template>
     <div class="LoginView">
-        <h1 class="login">Login</h1>
-        <h3>Usuario</h3>
-        <BaseInput type="text"></BaseInput>
-        
-        <h3>Contraseña</h3>
-         <BaseInput type="password"></BaseInput>
+      <div class="formLogin">
+        <h1 class="login">Welcome</h1>
+        <img src="@/assets/images/user.svg" class="user">
+       
+        <BaseInput type="text" class="usuario"></BaseInput>       
+      
+         <BaseInput type="password" class="password"></BaseInput>
 
-        <BaseButton contenido='Ingresar'></BaseButton>
-        
+        <BaseButton contenido='Login' class="boton"></BaseButton>
+        </div>
     </div>
 </template>
 
@@ -18,19 +19,33 @@ export default {};
 
 <style lang="scss" scoped>
 .LoginView {
-  border: 2px solid rgb(231, 129, 33);
-  width: 30%;
+  height: 100%;
+  display: flex;
   margin: auto;
-  margin-top: 5rem;
+  justify-content: center;
+  justify-items: center;
+
+}
+.formLogin {
+  width: 30%;
+   background: #ccc;
   border-radius: 14px;
+  height: auto;
+
   .login {
-    color: rgb(231, 129, 33);
     padding-top: 1rem;
   }
-  h3 {
-    color: rgb(231, 129, 33);
-    text-align: left;
-    padding-left: 10%;
-  }
+}
+.user {
+  width: 10%;
+}
+.password {
+  margin-top: 5%;
+}
+.usuario{
+  margin-top:5%;
+}
+.boton {
+  margin-top:5%;
 }
 </style>
