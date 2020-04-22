@@ -5,12 +5,8 @@
       <li><a href=""> Ingresos</a></li>
       <li><a href=""> Egresos</a></li>
       <li><a href=""> Clientes</a></li>
-      <li><a href=""> Cátalogos</a>
-      <ul>
-						<li><a href="">Submenu1</a></li>
-						<li><a href="">Submenu2</a></li>
-						<li><a href="">Submenu3</a></li>
-        </ul>
+      <li @click="$router.push({ name: 'category' })"> Categorias<li>
+     
       </li>
      
 
