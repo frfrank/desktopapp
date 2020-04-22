@@ -1,29 +1,37 @@
 <template>
-    <div class="BaseButton">
-        <button >{{contenido}}</button>
-    </div>
+  <div class="BaseButton">
+    <button :style="button">{{ contenido }}</button>
+  </div>
 </template>
 
 <script>
-    export default {
-        props:{
-            contenido:{
-                type:String
-            }
-        }
-    }
+export default {
+  props: {
+    contenido: {
+      type: String,
+    },
+    background: {
+      type: String,
+    },
+  },
+  data() {
+    return {
+      button: {
+        background: this.background,
+        height:'3rem',
+        border: "none",
+        borderRadius: "4px",
+        color: "white",
+        fontSize: "1.3rem",
+        width: "100%",
+        
+      },
+    };
+  },
+  methods: {
+    propertyBoton() {},
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-    button{
-        background: #0B2239;
-        height: 3rem;
-        border:none;
-        border-radius: 4px;         
-        color:white;  
-        font-size:1.3rem;
-        width: 80%;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-</style>
+<style lang="scss" scoped></style>

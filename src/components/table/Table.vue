@@ -13,7 +13,19 @@
         <td>{{ item.name }}</td>
         <td>{{ item.description }}</td>
         <td>{{ item.state }}</td>
-        <td>50</td>
+        <td>
+          <div class="action">
+            <div class="delete">
+              <BaseButton contenido="Eliminar" background="#C82333"></BaseButton>
+            </div>
+            <div class="update">
+              <BaseButton contenido="Actualizar" background="#138496"></BaseButton>
+            </div>
+            <div class="show">
+              <BaseButton contenido="Ver" background="#5A6268"></BaseButton>
+            </div>
+          </div>
+        </td>
       </tr>
     </table>
   </div>
@@ -34,8 +46,8 @@ export default {
 table,
 th,
 td {
-  border: 1px solid black;
- border-collapse: collapse;
+  border: rgb(31, 29, 25) 1px solid;
+  border-collapse: collapse;
 }
 th {
   background: #ccc;
@@ -44,5 +56,22 @@ th {
 th,
 td {
   padding: 15px;
+}
+.action {
+  display: flex;
+  flex-direction: row;
+   flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin-top: 3px;
+  
+  .delete {
+    margin-left: 6px;
+  }
+  .update {
+    margin-left: 6px;
+  }
+  .show {
+    margin-left: 6px;
+  }
 }
 </style>
